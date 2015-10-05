@@ -1,8 +1,13 @@
 <h1>All the tickets</h1>
+
 {{#each model as |ticket|}}
+{{ ticket.open}}
 <div class="well">
 <p><strong>Students: {{ticket.name}}</strong></p>
 <p>{{ticket.description}}</p>
 <p><strong>Posted at:</strong> {{format-date ticket.date_added}}</p>
 </div>
+
+
+
 {{/each}}
